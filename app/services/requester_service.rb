@@ -24,7 +24,7 @@ class RequesterService
         query: {
           key: KEY,
           ids: (tickers || []).join(','),    
-          attributes: fields,
+          attributes: (fields || []).join(','),
         },
       )
       if responce.code == 200
@@ -45,7 +45,7 @@ class RequesterService
         },
       )
       if responce.code == 200
-        JSON.parse(responce.body).first[price].to_f
+        JSON.parse(responce.body).first["price"].to_f
       else
         false
       end

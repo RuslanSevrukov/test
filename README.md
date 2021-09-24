@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##The Challenge
 
-Things you may want to cover:
+The idea of this challenge shows the abilities to understand and engage with tasks. The challenge covers core functionality  which uses daily at Patchwork, including working with API’s, building reusable methods, displaying understanding of good design patterns, and the testing thereof.
 
-* Ruby version
+##The Task
 
-* System dependencies
+There were provided the API documentation to an open source cryptocurrency API. An application can perform the following:
 
-* Configuration
+###Task 1
 
-* Database creation
+Retrieve a list of cryptocurrencies given set of tickers
+**Ie: Given an array of [‘BTC’, ‘XRP’, ‘ETH’]**
+To get the full payload of those cryptocurrencies
 
-* Database initialization
+###Task 2
 
-* How to run the test suite
+Retrieve a (list) specific crypto currency and specific values based on the ticker and any other dynamic params
+**Ie: It shows the [circulating_supply, max_supply, name, symbol, price] for [ETH, BTC]**
 
-* Services (job queues, cache servers, search engines, etc.)
+###Task 3
 
-* Deployment instructions
+Retrieve a specific cryptocurrency to specific fiat. Ie: BTC in ZAR or ETH in USD
 
-* ...
+###Task 4
+
+Calculate the price of one cryptocurrency from another, in relation to their dollar value
+**Ie:  1BTC = $100, 1ETH = $50, therefore 1ETH == 0.5BTC**
+
+##Tools:
+API URL = https://api.nomics.com/v1/
